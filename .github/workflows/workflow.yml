@@ -3,7 +3,7 @@ name: Publish Site
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   build-deploy:
@@ -18,5 +18,3 @@ jobs:
         uses: chabad360/hugo-gh-pages@master
         with:
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
-          branch: main
-          repo: azerdemir/azerdemir.github.io
